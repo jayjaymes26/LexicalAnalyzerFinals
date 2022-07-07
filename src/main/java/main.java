@@ -28,9 +28,9 @@ public class main {
                 conv = String.valueOf(word[i]);
                 value = conv.substring(start, peek - start);
                 if (check(value, Keyword)) {
-                    cout << value << " - is a keyword" << endl;
+                    System.out.println(value + " - is a keyword" );
                 } else {
-                    cout << value << " - is an Identifier" << endl;
+                    System.out.println(value + " - is an Identifier" );
                 }
             } else {
                 while (!isalnum(word[end])) {
@@ -43,11 +43,11 @@ public class main {
                 }
                 value = conv.substring(start, 1);
                 if (check(value, Punctuator)) {
-                    cout << value << " - is a Punctuator" << endl;
+                    System.out.println(value + " - is a Punctuator" );
                 } else if (check(value, Operator)) {
-                    cout << value << " - is an Operator" << endl;
+                    System.out.println(value + " - is an Operator" );
                 } else {
-                    cout << value << " -  does not exist" << endl;
+                    System.out.println(value + " -  does not exist" );
                 }
             }
             i = end;
